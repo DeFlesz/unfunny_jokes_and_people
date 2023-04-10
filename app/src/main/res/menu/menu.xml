@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/random_user_list"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        android:title="users"
+        />
+    <item
+        android:id="@+id/chuck_norris"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_face_retouching_natural_24"
+        android:title="chuck norris"
+        />
+</menu>

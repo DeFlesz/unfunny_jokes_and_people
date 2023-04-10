@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="8dp"
+    android:clickable="true"
+
+    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/item_profile_picture"
+        app:shapeAppearanceOverlay="@style/rondedImage"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_centerVertical="true"
+        />
+    
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/item_profile_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/item_name"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:textColor="?colorOnSurface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+
+            />
+
+        <TextView
+            android:id="@+id/item_phone"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="?colorOnSurfaceVariant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+48 000 000 000"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.document_view">
+
+
+
+    <RelativeLayout
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/view_profile_picture"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            app:shapeAppearanceOverlay="@style/rondedImage"
+            android:id="@+id/view_profile_center_picture"
+            />
+    </RelativeLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_below="@id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        />
+
+    <RelativeLayout
+        android:layout_below="@id/profile"
+        android:id="@+id/name_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        >
+
+        <TextView
+            android:layout_marginVertical="16dp"
+            android:id="@+id/name_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_blank_fragment"
+            style="@style/TextAppearance.Material3.HeadlineLarge"
+            android:textAlignment="center"
+            />
+
+    </RelativeLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider1"
+        android:layout_below="@id/name_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_below="@id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Info"
+                style="@style/TextAppearance.Material3.HeadlineMedium"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="4dp"
+                >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="phone number:"
+                android:drawableLeft="@drawable/ic_baseline_phone_enabled_24"
+                android:drawablePadding="4dp"
+                style="@style/TextAppearance.Material3.HeadlineSmall"
+                />
+
+            <TextView
+                android:id="@+id/view_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+48 123 456 789"
+                style="@style/TextAppearance.Material3.ActionBar.Subtitle"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="e-mail:"
+                android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
+                android:drawablePadding="4dp"
+                style="@style/TextAppearance.Material3.HeadlineSmall"
+                />
+
+            <TextView
+                android:id="@+id/view_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="example@mailto.com"
+                style="@style/TextAppearance.Material3.ActionBar.Subtitle"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="address:"
+                android:drawableLeft="@drawable/ic_baseline_place_24"
+                android:drawablePadding="4dp"
+                style="@style/TextAppearance.Material3.HeadlineSmall"
+                />
+
+            <TextView
+                android:id="@+id/view_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ul. im. Jana Pawła II"
+                style="@style/TextAppearance.Material3.ActionBar.Subtitle"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="birthday:"
+                android:drawableLeft="@drawable/ic_baseline_calendar_month_24"
+                android:drawablePadding="4dp"
+                style="@style/TextAppearance.Material3.HeadlineSmall"
+                />
+
+            <TextView
+                android:id="@+id/view_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01/01.1970"
+                style="@style/TextAppearance.Material3.ActionBar.Subtitle"
+                />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>
